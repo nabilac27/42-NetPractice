@@ -254,7 +254,7 @@ AI tools were used as learning assistance during the project to:
 | 255.255.255.248 | /29  | 8          | subnet jumps by 8                 |
 | 255.255.255.252 | /30  | 4          | subnet jumps by 4                 |
 
-Block size formula
+**Block size formula**
 ```bash
 256 - last subnet mask octet = block size
 ```
@@ -267,3 +267,17 @@ The following IP ranges are reserved for special purposes and should generally n
 | 127.X.X.X               | localhost / loopback                     | testing local machine using `127.0.0.1`         |
 | 0.0.0.0                 | default route / unspecified address      | router sends unknown traffic to default gateway |
 | 255.255.255.255         | local network broadcast                  | DHCP discovery packets                          |
+
+
+**Private IP Ranges**
+
+The internet behaves like a router. However, if an interface is connected directly or indirectly to the internet, it cannot have an IP address in the following reserved private IP ranges:
+
+| Private IP Range      | Start Address | End Address     | Number of IP Addresses |
+| --------------------- | ------------- | --------------- | ---------------------- |
+| Class C Private Range | 192.168.0.0   | 192.168.255.255 | 65,536                 |
+| Class B Private Range | 172.16.0.0    | 172.31.255.255  | 1,048,576              |
+| Class A Private Range | 10.0.0.0      | 10.255.255.255  | 16,777,216             |
+
+
+---
