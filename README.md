@@ -68,10 +68,10 @@ The project requires completing all 10 levels.
 
 ### Articles and Tutorials
 The following resources were used to study networking fundamentals such as **TCP/IP addressing, subnet masks, CIDR notation, default gateways, routers, switches, and basic OSI layer** concepts:
+  - https://github.com/viruskizz/42bangkok-netpractice
+  - https://github.com/lpaube/NetPractice
   - https://www.youtube.com/watch?v=s_Ntt6eTn94&t=669s 
   - https://www.youtube.com/watch?v=jgwWFKryrOw
-
-  - https://github.com/lpaube/NetPractice
 
 ### AI Usage
 AI tools were used as learning assistance during the project to:
