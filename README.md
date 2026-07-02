@@ -23,7 +23,7 @@ The project consists of 10 levels where incorrect network configurations must be
 - No complation is required for this project.
 
 ### Installation
-- Download the file attached to the project page.
+- Download the file (net_practice.1.9.tgz) attached to the project page. 
 - Extract the files into a folder of your choice.
 
 ### Execution
@@ -280,3 +280,6 @@ The internet behaves like a router. However, if an interface is connected direct
 
 
 ---
+
+# Preview
+![Demo](docs/netpractice.gif)
