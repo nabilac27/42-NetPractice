@@ -1,6 +1,34 @@
 *This project has been created as part of the 42 curriculum by nchairun*
 
 <p align="center">
+  <img src="https://cdn-icons-png.flaticon.com/512/3062/3062634.png" width="70" alt="Network Logo">
+</p>
+
+<h1 align="center">NetPractice</h1>
+
+<h3 align="center">
+  TCP/IP • IPv4 • Subnetting • Routing • Network Fundamentals
+</h3>
+
+<p align="center">
+  <img src="https://img.shields.io/badge/School-42-black.svg" alt="42">
+  <img src="https://img.shields.io/badge/Project-NetPractice-blue.svg" alt="NetPractice">
+  <img src="https://img.shields.io/badge/Networking-TCP%2FIP-green.svg" alt="Networking">
+</p>
+
+---
+
+## About
+
+**NetPractice** is a networking project in the 42 curriculum that introduces the fundamentals of **TCP/IP networking** through a series of interactive exercises.
+
+Instead of writing code, the project focuses on configuring small network topologies by assigning valid **IPv4 addresses**, **subnet masks**, **gateways**, and **routes**. Each level presents a broken network that must be fixed so every host can communicate successfully.
+
+The project consists of **10 progressively challenging levels**, each reinforcing essential networking concepts through hands-on problem solving. :contentReference[oaicite:0]{index=0}
+
+---
+
+<p align="center">
   <img src="https://upload.wikimedia.org/wikipedia/commons/8/8d/42_Logo.svg" width="100"/>
 </p>
 
