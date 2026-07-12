@@ -1,7 +1,7 @@
 *This project has been created as part of the 42 curriculum by nchairun*
 
 <p align="center">
-  <img src="https://cdn-icons-png.flaticon.com/512/3062/3062634.png" width="70" alt="Network Logo">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/8/8d/42_Logo.svg" width="100"/>
 </p>
 
 <h1 align="center">NetPractice</h1>
@@ -20,29 +20,11 @@
 
 ## About
 
-**NetPractice** is a networking project in the 42 curriculum that introduces the fundamentals of **TCP/IP networking** through a series of interactive exercises.
-
-Instead of writing code, the project focuses on configuring small network topologies by assigning valid **IPv4 addresses**, **subnet masks**, **gateways**, and **routes**. Each level presents a broken network that must be fixed so every host can communicate successfully.
-
-The project consists of **10 progressively challenging levels**, each reinforcing essential networking concepts through hands-on problem solving. :contentReference[oaicite:0]{index=0}
-
----
-
-<p align="center">
-  <img src="https://upload.wikimedia.org/wikipedia/commons/8/8d/42_Logo.svg" width="100"/>
-</p>
-
-<h1 align="center">
-  NetPractice
-</h1>
-
-## Description
 **NetPractice** is a 42 networking project designed to introduce the fundamentals of **TCP/IP networking** and **small network configuration**.
 
 The goal of the project is to understand how devices communicate through **IP addressing, subnet masks, CIDR notation, switches, routers, routing tables, and default gateways**.
 
 The project consists of 10 levels where incorrect network configurations must be analyzed and fixed so devices can communicate successfully across the network.
-
 
 ---
 
