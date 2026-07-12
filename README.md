@@ -92,94 +92,237 @@ AI tools were used as learning assistance during the project to:
 ## Concepts
 
 <details>
-<summary><strong>IPv4 Addressing</strong></summary>
+<summary><strong>TCP/IP Addressing</strong></summary>
 
 ---
 
-Every device on a network requires a unique IPv4 address.
+TCP/IP is the foundation of modern computer networking.
+
+- **TCP (Transmission Control Protocol)**
+
+  Provides reliable communication between devices by ensuring packets are delivered in the correct order.
+
+- **IP (Internet Protocol)**
+
+  Responsible for addressing and routing packets across networks.
+
+Together, TCP/IP defines how data is packetized, addressed, transmitted, routed, and received.
+
+</details>
+
+<details>
+<summary><strong>Subnet Masks & CIDR Notation</strong></summary>
+
+---
+
+Subnetting divides a larger network into smaller subnetworks.
+
+### Subnet Mask
+
+A subnet mask is a 32-bit value used to separate the **network** portion of an IP address from the **host** portion.
 
 Example:
 
 ```text
-192.168.1.10
+IP Address : 192.168.1.25
+Subnet Mask: 255.255.255.0
 ```
 
-</details>
+### CIDR Notation
 
-<details>
-<summary><strong>Subnet Masks</strong></summary>
-
----
-
-Subnet masks separate the **network** portion of an IP address from the **host** portion.
+CIDR represents the subnet mask using a slash followed by the number of network bits.
 
 Example:
 
 ```text
-255.255.255.0
+255.255.255.0 = /24
+255.255.255.128 = /25
 ```
 
 </details>
 
 <details>
-<summary><strong>Network and Host IDs</strong></summary>
+<summary><strong>Default Gateway & Routing</strong></summary>
 
 ---
 
-Devices can communicate directly only when they belong to the same network.
+A host can communicate directly only with devices in its own subnet.
 
-Understanding which bits identify the network and which identify the host is fundamental to subnetting.
-
-</details>
-
-<details>
-<summary><strong>Default Gateway</strong></summary>
-
----
-
-When the destination belongs to another network, packets are forwarded to the default gateway.
+When the destination belongs to another network, packets are sent to the **default gateway**.
 
 ```text
-Host → Gateway → Destination
+PC1
+ │
+ ▼
+Gateway (Router)
+ │
+ ▼
+Destination Network
+```
+
+A route is simply:
+
+```text
+Destination Network → Next Hop
+```
+
+Example:
+
+```text
+192.168.2.0/24 → 10.0.0.2
 ```
 
 </details>
 
 <details>
-<summary><strong>Routing</strong></summary>
+<summary><strong>Routers & Switches</strong></summary>
 
 ---
 
-Routers forward packets between different networks using routing tables.
+### Switch
 
-Correct routing allows devices on separate networks to communicate.
+Connects multiple devices within the **same local network**.
+
+### Router
+
+Connects **different networks** and forwards packets between them.
+
+Example:
+
+```text
+192.168.1.0/24
+        │
+   Router
+        │
+192.168.2.0/24
+```
+
+Routers use **routing tables** to determine where packets should be forwarded.
 
 </details>
 
 <details>
-<summary><strong>Subnetting</strong></summary>
+<summary><strong>Network & Broadcast Addresses</strong></summary>
 
 ---
 
-Subnetting divides a larger network into smaller subnetworks, improving organization and efficient IP allocation.
+Each subnet reserves two special addresses.
+
+### Network Address
+
+- First address in the subnet.
+- Identifies the subnet itself.
+
+### Broadcast Address
+
+- Last address in the subnet.
+- Sends packets to every host in the subnet.
 
 </details>
 
 <details>
-<summary><strong>Broadcast Address</strong></summary>
+<summary><strong>OSI Model</strong></summary>
 
 ---
 
-Each subnet has a broadcast address used to communicate with every host on that network.
+The OSI model describes how data travels through a network.
+
+| Layer | Name |
+|------:|------|
+| 7 | Application |
+| 6 | Presentation |
+| 5 | Session |
+| 4 | Transport |
+| 3 | Network |
+| 2 | Data Link |
+| 1 | Physical |
+
+NetPractice mainly focuses on **Layer 3 (Network)**, where IP addressing and routing occur.
 
 </details>
 
 <details>
-<summary><strong>Network Troubleshooting</strong></summary>
+<summary><strong>Communication Summary</strong></summary>
 
 ---
 
-Most NetPractice exercises involve identifying incorrect IP addresses, subnet masks, gateways, or routes and correcting them to restore connectivity.
+```text
+Same subnet
+    │
+    └──► Direct communication
+
+Different subnet
+    │
+    └──► Send to default gateway
+              │
+              ▼
+         Router forwards packet
+              │
+              ▼
+         Destination network
+```
+
+Key points:
+
+- Same subnet → direct communication
+- Different subnet → use the default gateway
+- Routers connect networks
+- Routing tables determine the next hop
+- Subnet masks define network boundaries
+
+</details>
+
+---
+
+## Useful References
+
+<details>
+<summary><strong>CIDR & Subnet Mask Cheat Sheet</strong></summary>
+
+---
+
+| Subnet Mask | CIDR | Block Size |
+|-------------|:---:|----------:|
+| 255.0.0.0 | /8 | 16,777,216 |
+| 255.255.0.0 | /16 | 65,536 |
+| 255.255.255.0 | /24 | 256 |
+| 255.255.255.128 | /25 | 128 |
+| 255.255.255.192 | /26 | 64 |
+| 255.255.255.224 | /27 | 32 |
+| 255.255.255.240 | /28 | 16 |
+| 255.255.255.248 | /29 | 8 |
+| 255.255.255.252 | /30 | 4 |
+
+**Block size formula**
+
+```text
+256 − Last subnet mask octet = Block size
+```
+
+</details>
+
+<details>
+<summary><strong>Reserved & Private IP Ranges</strong></summary>
+
+---
+
+### Special Addresses
+
+| Address | Purpose |
+|---------|---------|
+| `127.0.0.1` | Loopback |
+| `0.0.0.0` | Default / Unspecified |
+| `255.255.255.255` | Broadcast |
+
+### Private Networks
+
+| Range | CIDR |
+|-------|------|
+| `10.0.0.0 – 10.255.255.255` | /8 |
+| `172.16.0.0 – 172.31.255.255` | /12 |
+| `192.168.0.0 – 192.168.255.255` | /16 |
+
+These ranges are reserved for private networks and are not routable on the public Internet.
 
 </details>
 
