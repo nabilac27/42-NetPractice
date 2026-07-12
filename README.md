@@ -10,12 +10,6 @@
   TCP/IP • IPv4 • Subnetting • Routing • Network Fundamentals
 </h3>
 
-<p align="center">
-  <img src="https://img.shields.io/badge/School-42-black.svg" alt="42">
-  <img src="https://img.shields.io/badge/Project-NetPractice-blue.svg" alt="NetPractice">
-  <img src="https://img.shields.io/badge/Networking-TCP%2FIP-green.svg" alt="Networking">
-</p>
-
 ---
 
 ## About
