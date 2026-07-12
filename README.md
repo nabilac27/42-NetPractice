@@ -89,51 +89,6 @@ AI tools were used as learning assistance during the project to:
 - practice subnet calculations and routing logic.
 - review and improve the README structure and formatting.
 
----
-
-## Levels
-
-| Level | Concepts Introduced | Objective |
-|-------|----------------------|-----------|
-| **Level 1** | IPv4 Addressing | Configure hosts within the same network. |
-| **Level 2** | Subnet Masks | Identify valid networks using subnet masks. |
-| **Level 3** | Network & Host IDs | Distinguish network and host portions of an IP address. |
-| **Level 4** | Default Gateway | Configure communication between different networks. |
-| **Level 5** | Routing Basics | Route packets through intermediate devices. |
-| **Level 6** | Multiple Networks | Connect several subnets together. |
-| **Level 7** | Routers | Configure routing between multiple interfaces. |
-| **Level 8** | Advanced Routing | Solve more complex routing scenarios. |
-| **Level 9** | Network Troubleshooting | Identify and correct addressing errors. |
-| **Level 10** | Comprehensive Review | Combine all previous networking concepts. |
-
----
-
-## Learning Progression
-
-```text
-IPv4 Addressing
-        │
-        ▼
-Subnet Masks
-        │
-        ▼
-Network & Host IDs
-        │
-        ▼
-Default Gateway
-        │
-        ▼
-Routing
-        │
-        ▼
-Multi-Network Communication
-        │
-        ▼
-Network Troubleshooting
-```
-
----
-
 ## Concepts
 
 <details>
@@ -228,19 +183,6 @@ Most NetPractice exercises involve identifying incorrect IP addresses, subnet ma
 
 </details>
 
----
-
-
-## What I Learned
-
-- Understanding IPv4 addressing
-- Working with subnet masks
-- Identifying network and host IDs
-- Configuring default gateways
-- Routing packets between networks
-- Troubleshooting network configurations
-- Reading and interpreting network diagrams
-- Applying TCP/IP fundamentals to practical scenarios
 
 ---
 
