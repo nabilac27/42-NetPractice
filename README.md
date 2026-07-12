@@ -91,6 +91,167 @@ AI tools were used as learning assistance during the project to:
 
 ---
 
+## Levels
+
+| Level | Concepts Introduced | Objective |
+|-------|----------------------|-----------|
+| **Level 1** | IPv4 Addressing | Configure hosts within the same network. |
+| **Level 2** | Subnet Masks | Identify valid networks using subnet masks. |
+| **Level 3** | Network & Host IDs | Distinguish network and host portions of an IP address. |
+| **Level 4** | Default Gateway | Configure communication between different networks. |
+| **Level 5** | Routing Basics | Route packets through intermediate devices. |
+| **Level 6** | Multiple Networks | Connect several subnets together. |
+| **Level 7** | Routers | Configure routing between multiple interfaces. |
+| **Level 8** | Advanced Routing | Solve more complex routing scenarios. |
+| **Level 9** | Network Troubleshooting | Identify and correct addressing errors. |
+| **Level 10** | Comprehensive Review | Combine all previous networking concepts. |
+
+---
+
+## Learning Progression
+
+```text
+IPv4 Addressing
+        │
+        ▼
+Subnet Masks
+        │
+        ▼
+Network & Host IDs
+        │
+        ▼
+Default Gateway
+        │
+        ▼
+Routing
+        │
+        ▼
+Multi-Network Communication
+        │
+        ▼
+Network Troubleshooting
+```
+
+---
+
+## Concepts
+
+<details>
+<summary><strong>IPv4 Addressing</strong></summary>
+
+---
+
+Every device on a network requires a unique IPv4 address.
+
+Example:
+
+```text
+192.168.1.10
+```
+
+</details>
+
+<details>
+<summary><strong>Subnet Masks</strong></summary>
+
+---
+
+Subnet masks separate the **network** portion of an IP address from the **host** portion.
+
+Example:
+
+```text
+255.255.255.0
+```
+
+</details>
+
+<details>
+<summary><strong>Network and Host IDs</strong></summary>
+
+---
+
+Devices can communicate directly only when they belong to the same network.
+
+Understanding which bits identify the network and which identify the host is fundamental to subnetting.
+
+</details>
+
+<details>
+<summary><strong>Default Gateway</strong></summary>
+
+---
+
+When the destination belongs to another network, packets are forwarded to the default gateway.
+
+```text
+Host → Gateway → Destination
+```
+
+</details>
+
+<details>
+<summary><strong>Routing</strong></summary>
+
+---
+
+Routers forward packets between different networks using routing tables.
+
+Correct routing allows devices on separate networks to communicate.
+
+</details>
+
+<details>
+<summary><strong>Subnetting</strong></summary>
+
+---
+
+Subnetting divides a larger network into smaller subnetworks, improving organization and efficient IP allocation.
+
+</details>
+
+<details>
+<summary><strong>Broadcast Address</strong></summary>
+
+---
+
+Each subnet has a broadcast address used to communicate with every host on that network.
+
+</details>
+
+<details>
+<summary><strong>Network Troubleshooting</strong></summary>
+
+---
+
+Most NetPractice exercises involve identifying incorrect IP addresses, subnet masks, gateways, or routes and correcting them to restore connectivity.
+
+</details>
+
+---
+
+
+## What I Learned
+
+- Understanding IPv4 addressing
+- Working with subnet masks
+- Identifying network and host IDs
+- Configuring default gateways
+- Routing packets between networks
+- Troubleshooting network configurations
+- Reading and interpreting network diagrams
+- Applying TCP/IP fundamentals to practical scenarios
+
+---
+
+<div align="center">
+
+© 2026 Nabila C. All rights reserved.
+
+</div>
+
+---
+
 ## Networking Concepts Learned
 - **TCP/IP addressing**
   
