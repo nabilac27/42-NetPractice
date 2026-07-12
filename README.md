@@ -326,18 +326,11 @@ These ranges are reserved for private networks and are not routable on the publi
 
 </details>
 
-
 ---
 
-<div align="center">
+<details>
+<summary><strong>More: Networking Concept Learned</strong></summary>
 
-© 2026 Nabila C. All rights reserved.
-
-</div>
-
----
-
-## Networking Concepts Learned
 - **TCP/IP addressing**
   
   how devices identify and communicate with each other on a network.
@@ -534,8 +527,17 @@ The internet behaves like a router. However, if an interface is connected direct
 | Class B Private Range | 172.16.0.0    | 172.31.255.255  | 1,048,576              |
 | Class A Private Range | 10.0.0.0      | 10.255.255.255  | 16,777,216             |
 
+</details>
 
 ---
 
 # Preview
 ![Demo](docs/netpractice.gif)
+
+---
+
+<div align="center">
+
+© 2026 Nabila C. All rights reserved.
+
+</div>
